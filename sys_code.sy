@@ -1,0 +1,27 @@
+int sum_array(int n, int arr[]) {
+    int i = 0;
+    int sum = 0;
+    while (i < n) {
+        if (arr[i] % 2 == 0) {
+            sum = sum + arr[i];
+        } else {
+            sum = sum - arr[i];
+        }
+        i = i + 1;
+    }
+    return sum;
+}
+
+int main() {
+    int n = 5;
+    int arr[5];
+    int i = 0;
+    while (i < n) {
+        arr[i] = i * i;
+        i = i + 1;
+    }
+
+    int result = sum_array(n, arr);
+
+    return result;
+}
