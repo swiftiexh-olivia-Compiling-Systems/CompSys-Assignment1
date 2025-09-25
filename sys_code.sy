@@ -23,5 +23,5 @@ int main() {
 
     int result = sum_array(n, arr);
     putint(result);
-    return result;
+    return 0;
 }
