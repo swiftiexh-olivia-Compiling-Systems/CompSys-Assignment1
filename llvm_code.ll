@@ -57,5 +57,5 @@ main_end:
 %arr_ptr = getelementptr inbounds [5 x i32], [5 x i32]* %arr, i32 0, i32 0
 %result = call i32 @sum_array(i32 %n_value, i32* %arr_ptr)
 call void @putint(i32 %result)
-ret i32 %result
+ret i32 0
 }
